@@ -94,11 +94,12 @@ public class ChestShop extends JavaPlugin {
 
     @Override
     public void onLoad() {
-        Dependencies.initializePlugins();
+        
     }
 
     @Override
     public void onEnable() {
+        Dependencies.initializePlugins();
         turnOffDatabaseLogging();
         if (!handleMigrations()) {
             return;
